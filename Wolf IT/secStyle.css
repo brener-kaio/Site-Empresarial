@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #7800FF;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 117px;
+}
+
+#logo{
+    height: 117px;
+    
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-list a{
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 32px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover{
+    opacity: 0.7;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFFFFF;
+    margin: 8px;
+}
+
+h2{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#info{
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: 10%;
+    padding-bottom: 18%;
+}
+
+.ctt{
+    height: 70px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#contato{
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #FFFFFF, #7800FF);
+    color: #FFFFFF;
+}
+
+
+
+footer{
+    background-color: #292727;
+    width: 90%;
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#ft{
+    background-color: #7800FF;
+}
+
+#fot{
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+#logob{
+    height: 90px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+#seta{
+    float: right;
+    margin-right: 10%;
+    margin-top: 25px;
+}
+
+@media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 100%;
+        top: 117px;
+        right: 0;
+        background-color: #7800FF;
+        display: block;
+        transform: translatey(-220%);
+        transition: transform 0.3s ease-in;
+        text-align: center
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    #logob{
+        display: none;
+    }
+
+    input{
+        width: 300px;
+    }
+
+    #texto{
+        width: 300px;
+    }
+
+    #botao{
+        width: 300px;
+    }
+
+    #va{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #val{
+        text-align: center;
+    }
+
+    #seta{
+        display: none;
+    }
+}
